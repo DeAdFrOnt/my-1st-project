@@ -1,0 +1,626 @@
+* {
+	margin     :0;
+	padding    :0;
+	list-style: none;
+  text-decoration: none;
+  text-align: center;
+	font-family: 'Roboto Slab', serif;  
+}
+*:focus {
+    outline: none;
+}
+a:visited {
+  color: #ff6388;
+  background-color: transparent;
+}
+.HomeSection {
+	width: 100%;
+	height: 100vh;
+	background: url(https://static.warthunder.com/upload/image/wallpapers/1_85_1920x1080_logo_eng_cde2725c39fc876250e7888fe04d4d04.jpg) no-repeat center top / cover;
+	color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+}
+/* Everething about Navigation*/
+.HeaderNavigation {
+  background: rgba(255,255,255,.90);
+	display: flex;
+	justify-content: space-around;
+	margin:40px 0 0 0;
+	z-index: 999;
+}
+.HeaderNavigation a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  color: #ff6388;
+  transition-duration: 0.9s;
+}
+.nav {
+  margin: 5px 0;
+	display: flex;
+	align-items: center;
+	font-size: 1.16rem;
+  }
+@media screen and (min-width: 801px){
+.nav-item:hover,.logo:hover{
+  background: red;
+}
+.FiftyWidth {
+	width: 45%;
+}  
+.HeaderNavigation a:hover {
+  color: white;
+}
+.Email{
+  width:51%;
+}
+.ClientsNameimg{
+	justify-content: space-between;
+}
+.InfoOfBlock{
+	width: 35%;
+}
+}
+.logo {
+  margin: 5px 0;
+  padding: 10px;
+	font-size: 2rem;
+  transition-duration: 0.9s;
+  border-radius: 4px;
+}
+.nav-item{
+  margin: 0 1px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+	font-size: 1.16rem;
+	padding: 0 12.5px;
+	transition-duration: 0.9s;
+  border-radius: 4px;  
+}
+.nav-toggle, .nav-toggle-label{
+  display: none;
+}
+
+@media screen and (max-width: 800px){
+  :root {
+  --background: rgba(255,255,255,.90)
+}
+.HeaderNavigation {
+  top:0;
+  margin: 0;
+  background: var(--background);
+  position  : fixed;
+  width     : 100%;
+  z-index   : 999;
+  padding   : 10px 0;
+}
+.nav {
+  margin: 0;
+  display: block;
+	position        : absolute;
+	text-align      : left;
+	top             : 100%;
+	width           : 100%;
+	background      : var(--background);
+	transform       : scale(1, 0);
+	transform-origin: top;
+	transition      : transform 500ms ease-in-out;
+}
+.nav-item {
+ padding: 0 0 15px 17px;
+}
+.nav a {
+  padding: 0 0 0 7px;
+  border-left:4px solid #ff6388;
+	text-transform: uppercase;
+	font-size     : 1.5rem;
+	opacity       : 0;
+	transition    : opacity 150ms ease-in-out;
+}
+.nav-toggle {
+  display: none;
+}
+.nav-toggle:checked ~ .nav {
+	display  : block;
+	transform: scale(1,1);
+}
+.nav-toggle:checked ~ .nav a{
+	opacity   : 1;
+	transition: opacity 250ms ease-in-out 150ms;
+}
+.nav-toggle-label{
+	position   : absolute;
+	margin     : 0 0 0 1em;
+	top        : 0;
+	left       : 0;
+	height     : 100%;
+	display    : flex;
+	align-items: center;
+}
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+	display      : block;
+	background   : #ff6388;
+	height       : 4.5px;
+	width        : 2.5em;
+	position     : relative;
+}
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+	content :'';
+	position: absolute;
+}
+.nav-toggle-label span::before{
+  bottom: 10px;
+}
+.nav-toggle-label span::after{
+  top: 10px;
+}
+.BlogContent {
+  flex-wrap: wrap;
+}
+.BlogContainer {
+  flex-wrap: wrap;
+}
+.FiftyWidth {
+	width: 95%;
+}
+.Blog{
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.Email{
+  order: -1;
+}
+.Email>*{
+  margin: 0 0 20px 0;
+}
+.ClientsNameimg{
+  flex-wrap: wrap;
+  justify-content: center;
+}
+}
+/**/
+/* For flexible effext of Navigation*/
+.sticky {
+  margin: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+/**/
+/*Home page*/
+.Captions {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 150px 0 260px 0;
+}
+.caption1 {
+	font-size: 4rem;
+	text-transform: uppercase;
+	margin:0 0 36px;
+}
+.caption2 {
+	font-size: 1.6rem;
+	margin: 0 0 50px;
+}
+.btnGetStarted {
+	font-size: 1rem;
+	text-transform: uppercase;
+	border: 2px solid #ffffff;
+	padding: 18px 42px;
+	border-radius: 2px;
+	transition-duration: 0.9s;
+	color: #fff;
+}
+.btnGetStarted:hover {
+	background:#ffffff;
+	font-weight:bold;
+	border: 2px solid #ffffff;
+	color: red;
+	font-size: 1rem;
+}
+img {
+	position: relative;
+}
+/**/
+/*Sections adjustments*/
+.Services .AboutUs .Works .getInTouch .Blog .Footer, span{
+	height: 2px;
+	width:50px;
+	background: #555555;
+  margin: 25px 0;
+}
+.AboutUs, .Clients {
+	background-color: #f8f8f8;
+}
+.Title{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20pt;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.Subtitle{
+	font-size: 16pt;
+}
+.descrTitle {
+  margin: 15px 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14pt;
+	font-weight: bold;
+}
+.descr {
+	font-kerning: normal;
+	font-size: 14pt
+;}
+.SectionTitle{
+	padding:100px 20px 75px;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+/**/
+/* SERVICES */
+.Services {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding:0 0 85px;
+}
+.SingleServices {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.SingServices {
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	justify-content: space-around;  
+  height: auto;
+  margin: 20px 15px;
+}
+/**/
+/*AboutUs*/
+.AboutUs{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.TeamMemberSlider{
+	margin: 70px 0 0;
+	width: 90%;
+}
+.TeamMemberContainer .socialBar{
+  opacity: 0;
+  display: flex;
+	position: absolute;
+	margin: 0px 0px 30px;
+}
+.TeamMemberContainer .onHoverDark{
+	position: absolute;
+	width: 263px;
+	height: 250px;
+	background: #000;
+	opacity: 0;
+	z-index: 3;
+  transition-duration: 0.7s;	
+}
+.TeamMemberContainer:hover .socialBar{
+  opacity: 1;
+}
+.TeamMemberContainer:hover .onHoverDark{
+  opacity: 0.55;
+}
+.MembersPhoto{
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	position: relative;
+	margin:0 0 20px;
+}
+.socialBar a{
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+	width: 27px;
+	height: 27px;
+	z-index: 4;
+  transition-duration: 0.5s;	
+}
+.socialBar a:hover{
+	background: #c0301c;
+}
+.nameOfteamMember{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14pt;
+	font-weight: bold;
+	margin:0 0 15px;  
+}
+.positionOfteamMember{
+	font-size: 13pt;
+	font-weight: normal;
+	margin:0 0 100px; 
+}
+/**/
+/*Works*/
+.Works{
+	padding: 0px 0px 100px;
+}
+.Works nav{
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: center;
+}
+.Works a{
+	margin: 15px;
+	color: #555555;
+}
+.Works a:hover{
+	color: #ff6388;
+}
+.Gallary{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 0 20px;
+}
+.GallaryPictureContainer{
+	display: flex;
+	position: relative;
+	margin: 10px;
+}
+.GallaryPictureContainer:hover .contentOnHover{
+  opacity: 1;
+}
+.contentOnHover{
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+	position: absolute;
+	background: rgba(240,102,92, 0.7);
+	width: 360px;
+	height: 320px;
+	z-index: 10;
+	transition: 0.6s;
+	color: #fff;
+}
+.pictureTitle{
+	margin: 100px 0 0;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	font-size: 18pt;
+}
+.contentOnHover a{
+	margin: 0 0 85px;
+	color: #c6665c;
+	transition: 0.6s;	
+}
+.contentOnHover a:hover{
+	margin: 0 0 95px;
+	color: #fff;
+}
+.pictureButton{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 90px;
+	height: 36px;
+	background: #fff;
+	color: #c6665c;
+	transition: 0.6s;
+	border-radius: 7%;	
+}
+.pictureButton:hover{
+	background-color: #e25353;
+	border: 2px solid #fff;
+}
+.pictureButton img{
+	margin: 0px 0px 0px 5px;
+}
+/**/
+/*YourProject*/
+.YourProject{
+	width: 100%;
+	background: linear-gradient(rgba(215,0,0,.5), rgba(215,0,0,.5)),
+    url('http://www.imageurl.com'), url(../img/YourProject/bg_YourProject.png) no-repeat center top / cover ;
+	height: 370px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.TextOfYourProject{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 30pt;
+	font-weight: bold;
+	color: #fff;
+	margin: 0px 0px 25px;
+}
+.GetInTouch{
+	font-size: 18pt;
+}
+/**/
+/*Blog*/
+.BlogSection{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.BlogSection .SectionTitle{
+	padding: 60px 20px 75px;
+}
+.BlogContent{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.bottomBorder{
+	border-bottom: solid #dddddd 2px;
+}
+.BlogContainer{
+	display: flex;
+	justify-content: center;
+	padding: 40px 20px 40px;	
+}
+.BlogContainer img{
+	width: 440px;
+	height: 322px;
+}
+.InfoOfBlock{
+	margin: 0 35px;
+}
+.BlogTitle{
+	display: flex;
+}
+.data{
+	width: 72px;
+	height: 72px;
+	border: 1px solid #282828;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.readMore{
+	display: flex;
+}
+/**/
+/*Clients*/
+.Clients{
+	padding: 100px 0;
+	height: auto;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.ClientsNameimg{
+	margin:0 0 67px;
+	width:70%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+.ClientsNameimg img{
+	margin: 15px;
+}
+.ClientSlider{
+	width: 95%;
+}
+.textOfPerson{
+	margin:0 0 40px;	
+	font-size: 15pt;
+	font-style: italic;
+}
+.NameOfPerson{
+	margin:0 0 40px;	
+	font-size: 18pt;
+}
+/**/
+/*getInTouch*/
+.getInTouch{
+	height: auto;
+}
+.Blog{
+	display: flex;
+}
+.AdressInfo{
+  display: flex;
+  flex-direction: column;
+  margin:auto;
+  width: auto;
+}
+.AdressText{
+	display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.AdressImg{
+	position: absolute;
+	margin:2px 0 0 -20px;
+}
+.AdressDscr{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 44px;
+	margin:0 0 41px;
+}
+.AdressDscr div {
+	text-align: left;
+	font-size: 12pt;
+}
+.Adress {
+  font-size: 14pt;
+  margin:0 0 22px; 
+}
+.Email{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: space-around;
+}
+
+.OneHundrdWidth{
+	width: 95%;
+}
+.text {
+	padding: 17px;
+	border: 2px solid #555555;
+	border-radius: 4px;
+	box-sizing: border-box;
+	font-size: 12pt;
+	text-transform: uppercase;
+	text-align: left;
+}
+input[type=text]:focus{
+	border: 2px solid #c0301c;
+}
+.btnSendMessage{
+  transition-duration: 0.9s;	
+}
+.btnSendMessage:hover{
+	background:#c0301c;
+	border: 2px solid #c0301c;
+	color: white;
+	
+}
+/**/
+/*Footer*/
+.Footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #c0301c;
+  height: 305px;
+  width: 100%;
+  color: #fff;
+}
+.Footer span {
+ background: #fff;
+}
+.Footer img {
+  margin: 100px 0 0;
+}
+/**/
+/*border: 2px solid #ff0a0a;*/
+
+/*font-family: 'Roboto Slab', serif;
+font-family: 'Montserrat', sans-serif;
+line-height:1.235 ;*/
+
