@@ -377,7 +377,6 @@ img {
 	background: rgb(255, 206, 206);
 	border-radius: 10px;
 	transition: 0.9s;
-	border: 2px solid rgb(255, 142, 142);
 }
 .Works nav a:hover{
 	font-size: 1.1rem;
