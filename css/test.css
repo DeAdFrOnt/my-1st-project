@@ -210,17 +210,19 @@ a:visited {
 	margin: 0 0 50px;
 }
 .btnGetStarted {
-	font-size: 1rem;
+	font-size: 18pt;
 	text-transform: uppercase;
 	border: 2px solid #ffffff;
 	padding: 18px 42px;
-	border-radius: 2px;
-	transition-duration: 0.9s;
+	border-radius: 15px;
+	transition-duration: 1.2s;
 	color: #fff;
+	background: rgba(255, 255, 255, 0.295);
 }
 .btnGetStarted:hover {
-	background:#ffffff;
+	background: rgba(255, 255, 255, 0.938);
 	font-weight:bold;
+	border-radius: 30px;
 	border: 2px solid #ffffff;
 	color: red;
 	font-size: 1rem;
@@ -357,7 +359,27 @@ img {
 .Works nav{
 	display: flex;
 	flex-wrap:wrap;
-	justify-content: center;
+	justify-content: space-between;
+	width: 80%;
+}
+.Works nav a{
+	font-size: 0.9rem;
+	height: 25px;
+	margin: 2px;
+	padding: 10px;
+	color: #990021;
+	background: rgb(255, 206, 206);
+	border-radius: 10px;
+	transition: 0.9s;
+	border: 2px solid rgb(255, 142, 142)113);
+}
+.Works nav a:hover{
+	font-size: 1.1rem;
+	height: 30px;
+	padding: 17px 17px 30px;
+	color: #ffffff;
+	background: rgb(255, 123, 123);
+	border-radius: 15px;
 }
 .Works a{
 	margin: 15px;
@@ -392,7 +414,7 @@ img {
 	width: 360px;
 	height: 320px;
 	z-index: 10;
-	transition: 0.6s;
+	transition: 1.1s;
 	color: #fff;
 }
 .pictureTitle{
@@ -402,11 +424,15 @@ img {
 	font-size: 18pt;
 }
 .contentOnHover a{
+	height: auto;
 	margin: 0 0 85px;
+	padding: 5px 0;
 	color: #c6665c;
-	transition: 0.6s;	
+	transition: 0.8s;	
 }
 .contentOnHover a:hover{
+	font-size: 1.2rem;
+	padding: 10px;
 	margin: 0 0 95px;
 	color: #fff;
 }
@@ -419,7 +445,7 @@ img {
 	background: #fff;
 	color: #c6665c;
 	transition: 0.6s;
-	border-radius: 7%;	
+	border-radius: 10px;	
 }
 .pictureButton:hover{
 	background-color: #e25353;
